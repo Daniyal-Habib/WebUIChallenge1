@@ -396,8 +396,9 @@ nav{
 @media screen and (max-width: 540px) {
     header{
         .logo{
+            width: 50%;
             img{
-                width: 60%;
+                width: 100%;
             }
         }
         a{
@@ -458,14 +459,16 @@ nav{
 @media screen and (max-width: 375px){
     header{
         width: 90%;
+        
         .logo{
+            width: 45%;
             img{
-                width: 60%;
+                width: 100%;
             }
         }
         a{
             text-align: center;
-            font-size: .8rem;
+            font-size: 1rem;
             padding:5px 18px;
         }
     }

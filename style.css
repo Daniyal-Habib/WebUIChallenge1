@@ -528,8 +528,11 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 540px) {
+  header .logo {
+    width: 50%;
+  }
   header .logo img {
-    width: 60%;
+    width: 100%;
   }
   header a {
     font-size: 1rem;
@@ -581,12 +584,15 @@ nav li a:hover {
   header {
     width: 90%;
   }
+  header .logo {
+    width: 45%;
+  }
   header .logo img {
-    width: 60%;
+    width: 100%;
   }
   header a {
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 5px 18px;
   }
   main {
