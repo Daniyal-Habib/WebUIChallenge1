@@ -40,6 +40,9 @@ header{
         padding: .5rem 3rem;
         background-color: white;
         filter:drop-shadow(0px 1px 3px rgb(133, 133, 133));
+        &:hover{
+            background: rgba($color: white, $alpha: .95);
+        }
     }
 }
 .intro{
@@ -72,6 +75,9 @@ header{
             width: 80%;
             padding: 1.2rem 0;
             text-align: center;
+            &:hover{
+                background: rgba($color: $pink, $alpha: .9);
+            }
         }
     }
     .intro-right{
@@ -153,6 +159,9 @@ header{
         width: 45%;
         padding: 1rem 0;
         text-align: center;
+        &:hover{
+            background: rgba($color: $pink, $alpha: .8);
+        }
     }
 }
 .social-logo{
@@ -180,6 +189,12 @@ footer{
         border-radius: 10px;
         padding: 2em 3.5em;
         display: flex;
+        svg:hover{
+            path{
+                fill: rgba($color:white, $alpha: .8);  
+            }
+           
+        }
         .contact-left{
             .contact-item{
                 display: flex;
@@ -229,7 +244,9 @@ nav{
             color: white;
             font-size: 22px;
             font-weight: 600;
-            
+            &:hover{
+                color: rgba($color:white, $alpha: .7);
+            }
         }
     }
 }
@@ -377,5 +394,161 @@ nav{
     }
 }
 @media screen and (max-width: 540px) {
-
+    header{
+        .logo{
+            img{
+                width: 60%;
+            }
+        }
+        a{
+            font-size: 1rem;
+            padding: .5rem 2.2rem;
+        }
+    }
+    .intro{
+        .intro-left{
+            width: 70vw;
+            h1{
+                font-size:1.8em ;
+            }
+        }
+    }
+    .card{
+        .card-left{
+            width: 100%;
+            margin-left: 0;
+            h1{
+                font-size: 1.5em;
+            }
+        }
+        .card-right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .cards{
+        padding: 10% 10%;
+    }
+    .sign-up{
+        width: 80%;
+        transform: translate(15% , -50%);
+        padding: 3em 4em;
+        h1{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        a{
+            font-size: 1rem;
+            width: 100%;
+            padding: 1rem 0;
+        }
+    }
+    nav{
+        li{
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 375px){
+    header{
+        width: 90%;
+        .logo{
+            img{
+                width: 60%;
+            }
+        }
+        a{
+            text-align: center;
+            font-size: .8rem;
+            padding:5px 18px;
+        }
+    }
+    main{
+        height: 120vh;
+    }
+    .intro{
+        .intro-left{
+            h1{
+                font-size: 1.4em;
+            }
+            a{
+                font-size: 1rem;
+                width: 100%;
+                padding: 1.2rem 0;
+            }
+        }
+        .intro-right{
+            img{
+                width: 80%;
+            }
+        }
+    }
+    .card{
+        padding: 2em 2em;
+        .card-left{
+            
+            h1{
+                font-size: 1.3em;
+            }
+            p{
+                font-size: .9rem;
+            }
+        }
+        .card-right{
+            margin-top: 2em;
+            img{
+                width: 80%;
+            }
+        }
+    }
+    .sign-up{
+        padding: 3em 1em;
+        h1{
+            font-size: 1.4rem;
+        }
+        a{
+            
+        }
+    }
+    footer{
+        img{
+            width: 60%;
+        }
+        .contact{
+            flex-direction: column;
+            align-items: center;
+            .contact-left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+                .contact-item{
+                    width: 120%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .social-media{
+                width: 100%;
+                margin-top: 2em;
+            }
+        }
+    }
+    nav{
+        li{
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+    .copyright{
+        font-size: 10px;
+    }
 }
