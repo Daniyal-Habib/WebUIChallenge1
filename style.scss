@@ -2,6 +2,16 @@ $pink: hsl(322, 100%, 66%);
 $CyanPale: hsl(193, 100%, 96%);
 $CyanDark: #00252E;
 $Gray: hsl(208, 11%, 55%);
+@keyframes start{
+    from{
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 *,*::before,*::after{
     box-sizing: border-box;
     margin: 0;
@@ -86,6 +96,8 @@ header{
         width: 60vw;
         img{
             width: 80%;
+            transition: 1s ease-in;
+            animation: start 600ms ease-out;
         }
     }
 }
@@ -515,9 +527,7 @@ nav{
         h1{
             font-size: 1.4rem;
         }
-        a{
-            
-        }
+        
     }
     footer{
         img{

@@ -1,3 +1,29 @@
+@-webkit-keyframes start {
+  from {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes start {
+  from {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -120,6 +146,10 @@ header a:hover {
 
 .intro .intro-right img {
   width: 80%;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+  -webkit-animation: start 600ms ease-out;
+          animation: start 600ms ease-out;
 }
 
 .cards {
